@@ -16,7 +16,7 @@ export default function BlogView () {
     const blogs: blog[] = useSelector((state: RootState) => state.blogs.blogs)
 
     useEffect(() =>{
-        console.log("Entra", blogs)
+        console.log("Entra")
     },[])
 
     const Header = (element: blog): React.ReactElement => (
@@ -48,6 +48,7 @@ export default function BlogView () {
                         </Text>
                     </Card>
                 </Layout>
+                <Text>{""}</Text>
                 </>
             ))}
            

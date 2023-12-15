@@ -60,8 +60,8 @@ export const blogsReducer = createSlice({
             state.errorBlogs= "";
         },
         addBlog: (state, action: PayloadAction<blog>) => {
-            console.log("nuevo blog",action.payload)
-            console.log("blogs actuales, ",...state.blogs)
+            //console.log("nuevo blog",action.payload)
+            //console.log("blogs actuales, ",...state.blogs)
             state.blogs = [...state.blogs, action.payload]
         }
     },
