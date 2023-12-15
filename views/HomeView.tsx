@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
 import { BottomNavigation, BottomNavigationTab, Icon , Button , Divider} from '@ui-kitten/components';
-import { StyleSheet , View, Text} from 'react-native';
+import { StyleSheet , View, Text, Dimensions} from 'react-native';
 import { useNavigate } from 'react-router';
 import { useEffect, } from 'react';
 import { useSelector } from 'react-redux';
@@ -38,35 +38,24 @@ interface propsMenu {
           break;
       }
   }
-    // const pressAddSpent = () => {
-
-    //     console.log("Se oprime boton")
-    //     if (cards)
-    //         cards.map((card) => {
-    //             console.log("elemento de los cards, ",card)
-    //         })
-    // } DESCOMENTAR
 
     const iconHome = () => (
         
-        // <Icon name='file-text-outline' {...props} />
         <FontAwesome5 name='list' color={selectedIndex==0 ? '#0469ee' : '#9ea6b0'} size={20}/>
     )
 
     const iconAgregar = () => (
         
-        // <Icon name='trending-up-outline' {...props} />
         <FontAwesome5 name='newspaper' color={selectedIndex==1 ? '#0469ee' : '#9ea6b0'} size={20}/>
     )
 
     const iconTarjetas = () => (
         
-        // <Icon name='credit-card-outline' {...props} />
         <FontAwesome5 name='credit-card' color={selectedIndex==2 ? '#0469ee' : '#9ea6b0'} size={20}/>
     )
   return (
     <>
-    <View style={{paddingVertical: 10, paddingHorizontal:15}}>
+    <View style={{paddingVertical: 10, paddingHorizontal:15, maxHeight: Dimensions.get('window').height - 130}}>
 
     {children}
     
@@ -84,8 +73,6 @@ interface propsMenu {
             >
             <BottomNavigationTab key={0} title='Blogs' icon={iconHome} />
             <BottomNavigationTab key={1} title='Agregar' icon={iconAgregar} />
-            {/* <BottomNavigationTab key={1} title='Ingresos' icon={iconIngreso} />
-            <BottomNavigationTab key={2} title='Tarjetas' icon={iconTarjetas} /> */}
         </BottomNavigation>
     </View>
     </>

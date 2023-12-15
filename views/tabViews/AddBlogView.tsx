@@ -4,6 +4,9 @@ import HomeView from "../HomeView"
 
 
 export default function AddBlogView () {
+
+    
+
     return (
         <HomeView tabSelected={1}>
         <View>

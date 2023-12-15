@@ -18,16 +18,16 @@ export interface BlogsInitialState {
 const initialState: BlogsInitialState = {
     blogs: [
         {
-            titulo: "Uno",
+            titulo: "Primer Título",
             autor: "Fernando",
             fechaCreacion: "12/12/2023",
-            contenido: "Este es un escrito breve"
+            contenido: "Este es un escrito breve: \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
         {
-            titulo: "Dos",
+            titulo: "Segundo Título",
             autor: "Fernando",
             fechaCreacion: "12/12/2023",
-            contenido: "Este es un escrito breve"
+            contenido: "Este es otro escrito breve: \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
     ],
     isLoadingBlogs: false,
